@@ -1,0 +1,105 @@
+--- 
+--- 
+body {
+    background-color: #0e0805db;
+    background-blend-mode: luminosity;
+}
+
+.image {
+    img {
+        height: auto !important;
+        width: 100% !important;
+    }
+}
+
+.button {
+    font-weight: 100;
+    font-size: smaller;
+    padding: 0.5rem 2rem;
+    background: #ef4b28;
+    &:hover {
+        background: #ff8065;
+        text-decoration: none;
+    }
+    &.style1 {
+        color: #ef4b28;
+        text-decoration: none;
+        border-bottom: solid 2px;
+        border-radius: 0px;
+        padding: 0px;
+        line-height: 1.5rem;
+        background: none;
+    }
+}
+
+p {
+    font-weight: 100;
+    font-size: smaller;
+    line-height: initial;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    border-bottom: 0px;
+}
+
+header {
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 1.25em;
+    letter-spacing: 0.3rem;
+}
+
+.box {
+    &.style1 {
+        padding: 1.5em 3em;
+    }
+}
+
+#banner {
+    background: #ef4b28 url("images/banner.svg") bottom center no-repeat;
+    .button {
+        color: #ef4b28;
+    }
+}
+
+video {
+    max-height: 110%;
+}
+
+@media screen and (max-width: 736px) {
+    article.box.style1 {
+        padding: 0;
+        text-align: center;
+    }
+    .button {
+        width: auto;
+    }
+    video {
+        max-width: 100%;
+    }
+}
+
+.modal {
+    .modal-body {
+        padding: 1.5rem;
+    }
+    h1 {
+        padding-bottom: 0.5rem;
+    }
+    p {
+        // padding:1rem;
+    }
+    a {
+        font-size: 1rem;
+        color: #ef4b28;
+    }
+    button {
+        width: auto;
+        &:hover {
+            background: none;
+        }
+    }
+}
